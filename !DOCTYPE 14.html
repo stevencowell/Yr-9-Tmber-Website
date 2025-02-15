@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+       HEAD SECTION
+       Contains meta information, the page title, and internal CSS styles.
+  ============================================================ -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Year 9 Industrial Technology Timber - 2025. Resources, projects, and detailed content covering the syllabus and programme for the first term.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Year 9 Industrial Technology Timber - 2025</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f4f4;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+    h1, h2, h3, h4, h5 {
+      margin: 0 0 10px 0;
+    }
+    /* HEADER SECTION STYLES */
+    header {
+      background: #007bff;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    /* NAVIGATION STYLES */
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #0056b3;
+      flex-wrap: wrap;
+    }
+    nav a {
+      padding: 15px 20px;
+      color: #fff;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+    nav a:hover, nav a.active {
+      background: #003f80;
+    }
+    /* GOOGLE CLASSROOM SECTION STYLES */
+    .google-classroom {
+      background: #fffbcc;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #e0e0e0;
+      margin: 20px auto;
+      width: 90%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+    .google-classroom h2 {
+      color: #007bff;
+    }
+    .google-classroom p {
+      font-size: 1.1em;
+    }
+    .google-classroom a {
+      display: inline-block;
+      background: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .google-classroom a:hover {
+      background: #0056b3;
+    }
+    /* NEW: Google Image Styles */
+    .google-image {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .google-image img {
+      max-width: 400px; /* Adjust the max-width as needed */
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    /* MAIN CONTENT STYLES */
+    main.content {
+      padding: 20px;
+    }
+    .content-section {
+      display: none; /* Hidden by default; activated via JS */
+      background: #fff;
+      margin: 10px auto;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      max-width: 1000px;
+      border-radius: 5px;
+      transition: opacity 0.5s ease-in-out;
+    }
+    .content-section.active {
+      display: block;
+      opacity: 1;
+    }
+    /* COLLAPSIBLE (for weekly breakdowns and theory) STYLES */
+    details {
+      background: #e9ecef;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+    }
+    /* RESOURCE LINKS STYLES */
+    .resource-links ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .resource-links li {
+      margin: 5px 0;
+    }
+    .resource-links a {
+      color: blue;
+      text-decoration: underline;
+      transition: color 0.3s;
+    }
+    .resource-links a:hover {
+      color: blue;
+    }
+    /* FOOTER STYLES */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #333;
+      color: #fff;
+      margin-top: 20px;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+    footer a:hover {
+      color: #d9534f;
+    }
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        padding: 10px;
+      }
+      .content-section {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ============================================================
+       HEADER SECTION
+       Contains the website title and tagline.
+  ============================================================ -->
+  <header>
+    <h1>Year 9 Industrial Technology Timber - 2025</h1>
+    <p>Resources, Projects, and Content for Learning</p>
+  </header>
+
+  <!-- ============================================================
+       GOOGLE CLASSROOM SECTION
+       Contains the invitation and link to join Google Classroom.
+  ============================================================ -->
+  <section class="google-classroom" aria-label="Google Classroom Invitation">
+    <h2>Join Our Google Classroom</h2>
+    <!-- Inserted Image in Google Classroom Section -->
+    <div class="google-image">
+      <img src="https://images.diffit.me/51ca8f7a-fc89-4d3b-9c4c-743edfe8dc14.jpg" alt="Year 9 Industrial Technology Timber">
+    </div>
+    <p>Use the code below to join the class and access all online resources:</p>
+    <p><strong>Classroom Code: <span style="color: #d9534f; font-size: 1.3em;">gmcjmm5</span></strong></p>
+    <a href="https://classroom.google.com/c/NzQxODI2OTY5NTgy?cjc=gmcjmm5" target="_blank">Join Google Classroom</a>
+  </section>
+
+  <!-- ============================================================
+       NAVIGATION SECTION
+       Contains links to the different sections of the website.
+  ============================================================ -->
+  <nav aria-label="Main Navigation">
+   <a href="#program" class="nav-link active" data-section="program">Subject Program</a>
+    <a href="#syllabus" class="nav-link" data-section="syllabus">Syllabus</a>
+    <a href="#assessment" class="nav-link" data-section="assessment">Assessments</a>
+   
+   
+    <a href="#breadboard-unit" class="nav-link" data-section="breadboard-unit">Bread Board Unit</a>
+    <a href="#theory" class="nav-link" data-section="theory">Project Theory Content</a>
+   
+
+  <!-- ============================================================
+       MAIN CONTENT SECTION
+       Contains the main content areas of the website.
+  ============================================================ -->
+  <main class="content">
+    <!-- -------------------------
+         Subject Program Section
+    -------------------------- -->
+    <section class="content-section active" id="program" tabindex="0">
+      <h2>Subject Program</h2>
+      <p>Download the full subject programme for Year 9 Industrial Technology Timber (First Term).</p>
+      <div class="resource-links">
+        <ul>
+          <li><a href="https://docs.google.com/document/d/1ilBGpWBus-7eFoyuB4z84h3b_dVQrltCE2leNGVHXVY/edit?usp=sharing" target="_blank">View Programme</a></li>
+        </ul>
+      </div>
+    </section>
+
+   <!-- -------------------------
+     Syllabus Section
+-------------------------- -->
+<section class="content-section" id="syllabus" tabindex="0">
+  <h2>Syllabus</h2>
+  <p>This section details the Year 9 syllabus, including key learning outcomes, safety protocols, environmental considerations, and practical application.</p>
+  <ul>
+    <li>Introduction to Timber Technology</li>
+    <li>Health &amp; Safety Standards</li>
+    <li>Environmental Impacts &amp; Sustainability</li>
+    <li>Practical Application and Workshop Procedures</li>
+  </ul>
+  <div class="resource-links">
+    <ul>
+      <li>
+        <a href="https://docs.google.com/document/d/1Qc57cdiiGqA0mZHsg2C69luxJfeaUt0jRrrHngIfaaQ/edit?usp=drive_link" target="_blank">
+          Download Detailed Syllabus
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- -------------------------
+     Assessments Section
+-------------------------- -->
+<section class="content-section" id="assessment" tabindex="0">
+  <h2>Assessments</h2>
+  <p>Details and schedules for assessments will be updated soon. Check back for sample tasks, rubrics, and guidelines.</p>
+  <div class="resource-links">
+    <ul>
+      <li>
+        <a href="https://drive.google.com/file/d/1gVJhxqNb-AjaUcBOPbwUzBob-lMyWTvd/view?usp=drive_link" target="_blank">
+          View Assessment Guidelines
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+    
+
+   
+
+    <!-- -------------------------
+         Bread Board Unit Section
+    -------------------------- -->
+    <section class="content-section" id="breadboard-unit" tabindex="0">
+      <h2>Bread Board Unit</h2>
+      <p>This unit provides students with the opportunity to gain basic hand skills and confidence in working with timber. Over 10 weeks, students will learn to safely use a range of tools and equipment, master joinery techniques, and document their processes in line with key Industrial Technology outcomes.</p>
+      
+      <h3>Summary &amp; Duration</h3>
+      <p>
+        <strong>Duration:</strong> 10 Weeks (40-minute lessons, 4 per week)<br>
+        <strong>Focus:</strong> Workshop safety, marking &amp; measuring, cutting, joinery, finishing, self-evaluation, and project presentation.
+      </p>
+      
+      <h3>Unit Overview</h3>
+      <p>This “Bread Board” unit (Stage 5) focuses on building practical woodworking skills alongside an understanding of safety and design principles. Students use hand, power, and machine tools to construct a bread board while meeting both theory (5%) and practical (13%) assessment criteria.</p>
+      
+      <h3>Learning Outcomes &amp; Assessment</h3>
+      <ul>
+        <li><strong>IND51:</strong> Manage risks and WHS issues.</li>
+        <li><strong>IND52:</strong> Apply design principles to projects.</li>
+        <li><strong>IND53:</strong> Demonstrate effective use of tools.</li>
+        <li><strong>IND54:</strong> Justify material selection.</li>
+        <li><strong>IND55:</strong> Communicate project ideas effectively.</li>
+        <li><strong>IND56:</strong> Engage in collaborative work practices.</li>
+        <li><strong>IND57:</strong> Transfer skills across projects.</li>
+        <li><strong>IND58:</strong> Evaluate project quality on multiple criteria.</li>
+        <li><strong>IND59:</strong> Analyse new timber technologies.</li>
+        <li><strong>IND510:</strong> Assess the societal and environmental impact of technology.</li>
+      </ul>
+      <p><strong>Assessment:</strong> Practical – 13% | Theory – 5%</p>
+      
+      <h3>Weekly Breakdown</h3>
+      <details>
+        <summary><strong>Week 1:</strong> Workshop Introduction, Marking &amp; Measuring Exercise</summary>
+        <p><strong>Content:</strong> Introduction to workshop safety, proper use of marking and measuring tools, and understanding WHS signage.</p>
+        <p><strong>Theory:</strong> Onguard topics, General Workshop Safety, and Workplace Safety Signs discussions.</p>
+        <p><strong>Practical:</strong> Demonstration of marking out lengths with hand tools and a guided workshop tour.</p>
+        <p><strong>Resources:</strong> Design Brief, Safety Guidelines, Google Classroom – Week 1.</p>
+      </details>
+      <details>
+        <summary><strong>Week 2:</strong> Mark, Cut &amp; Plane Breadboard Sides; Onguard Safety Tests</summary>
+        <p><strong>Content:</strong> Techniques for marking, cutting, and planing timber edges with an emphasis on safety.</p>
+        <p><strong>Theory:</strong> Onguard topics, discussions on Woodworking Handtools, and Workplace Safety Signs.</p>
+        <p><strong>Practical:</strong> Hands-on practice with jack plane, try square, marking gauge, and tenon saw.</p>
+        <p><strong>Resources:</strong> SOP Disc Sander, Google Classroom – Week 2.</p>
+      </details>
+      <details>
+        <summary><strong>Week 3:</strong> Biscuit Join Sides &amp; Cut Ends</summary>
+        <p><strong>Content:</strong> Learn biscuit joining techniques and cutting accurate board ends; focus on grain direction and joint design.</p>
+        <p><strong>Theory:</strong> Discussions on timber grain, board layout, and various joint types.</p>
+        <p><strong>Practical:</strong> Demonstration and practice using a Biscuit Jointer, Pedestal Drill, and disc sander.</p>
+        <p><strong>Resources:</strong> SOP Biscuit Cutter, Google Classroom – Week 3.</p>
+      </details>
+      <details>
+        <summary><strong>Week 4:</strong> Shaping Ends &amp; Laser Cutter Demonstration</summary>
+        <p><strong>Content:</strong> Introduction to shaping timber using a jigsaw and exploring laser engraving for decorative patterns.</p>
+        <p><strong>Theory:</strong> Discussions on design options for ends and handles; Laser Cutter overview.</p>
+        <p><strong>Practical:</strong> Teacher demonstration of laser cutter and jigsaw; students sketch design ideas.</p>
+        <p><strong>Resources:</strong> SOP Disc Sander, SOP Pedestal Drill, Google Classroom – Week 4.</p>
+      </details>
+      <details>
+        <summary><strong>Week 5:</strong> Completing Laser-Cut Patterns &amp; Biscuit Join Ends</summary>
+        <p><strong>Content:</strong> Finalise laser-cut patterns and join patterned ends to the main board using adhesive and clamps.</p>
+        <p><strong>Theory:</strong> Discussion on joining techniques and safe workshop practices.</p>
+        <p><strong>Practical:</strong> Dry fitting using sash cramps and demonstration of glue and clamping.</p>
+        <p><strong>Resources:</strong> Joinery Research materials, Google Classroom – Week 5.</p>
+      </details>
+      <details>
+        <summary><strong>Week 6:</strong> Router Demonstration &amp; Safety Tests</summary>
+        <p><strong>Content:</strong> Learn how to safely use a router to cut profiles and implement risk management procedures.</p>
+        <p><strong>Theory:</strong> Onguard topics, discussions on router bits and design options.</p>
+        <p><strong>Practical:</strong> Demonstration of router usage and creation of a router profile sheet.</p>
+        <p><strong>Resources:</strong> Router Profile Sheet, Google Classroom – Week 6.</p>
+      </details>
+      <details>
+        <summary><strong>Week 7:</strong> Finishing Patterns, Sanding &amp; Preparation</summary>
+        <p><strong>Content:</strong> Complete decorative patterns, sand, and prep surfaces for finishing.</p>
+        <p><strong>Theory:</strong> Discussions on sanding techniques, abrasive materials, and timber seasoning processes.</p>
+        <p><strong>Practical:</strong> Demonstration of sanding techniques and surface preparation.</p>
+        <p><strong>Resources:</strong> Research on Timber Seasoning, Google Classroom – Week 7.</p>
+      </details>
+      <details>
+        <summary><strong>Week 8:</strong> Oil Timber Finish &amp; SWMS Completion</summary>
+        <p><strong>Content:</strong> Apply an oil finish (e.g. Danish Oil) and complete a Safe Work Method Statement (SWMS).</p>
+        <p><strong>Theory:</strong> Discussions on finishing materials, renewable resources, and sustainability in timber.</p>
+        <p><strong>Practical:</strong> Demonstration of oil finishing techniques.</p>
+        <p><strong>Resources:</strong> Research on Environmental Sustainability, Google Classroom – Week 8.</p>
+      </details>
+      <details>
+        <summary><strong>Week 9:</strong> Self-Evaluation</summary>
+        <p><strong>Content:</strong> Reflect on and evaluate the completed project, documenting processes and outcomes.</p>
+        <p><strong>Theory:</strong> Discussion on self-evaluation and record-keeping in project management.</p>
+        <p><strong>Practical:</strong> Creation of a self-evaluation report and update of the SWMS.</p>
+        <p><strong>Resources:</strong> Self-Evaluation Guidelines, Google Classroom – Week 9.</p>
+      </details>
+      <details>
+        <summary><strong>Week 10:</strong> Project Presentation &amp; Workshop Maintenance</summary>
+        <p><strong>Content:</strong> Final project presentation with a comprehensive project booklet and discussion on workshop maintenance.</p>
+        <p><strong>Theory:</strong> Discussion on project documentation, maintenance practices, and environmental impact.</p>
+        <p><strong>Practical:</strong> Final project demonstration and workshop maintenance cleanup.</p>
+        <p><strong>Resources:</strong> Google Classroom – Week 10.</p>
+      </details>
+    </section>
+
+    <!-- -------------------------
+         PROJECT THEORY CONTENT SECTION
+         Contains the overall project theory information including the Breadboard Theory sub-section.
+    -------------------------- -->
+    <section class="content-section" id="theory" tabindex="0">
+      <h2>Project Theory Content</h2>
+      <p>This section compiles the theoretical background for each project. Detailed explanations, diagrams, and resource links will be added as they become available.</p>
+      <h3>Breadboard Theory</h3>
+      <p>The following detailed articles cover the Breadboard unit, presented week-by-week to ensure you have a comprehensive understanding of the concepts, safety practices, and techniques required for success.</p>
+      
+      <!-- Week 1 in Breadboard Theory -->
+      <details>
+        <summary><strong>Week 1: Workshop Safety and Introduction</strong></summary>
+        <article>
+          <h4>Introduction</h4>
+          <p>Welcome to Week 1 of the Breadboard unit. This week, your focus is on establishing a safe and productive workshop environment. Safety is paramount in industrial technology, and this article covers the fundamental principles that will guide your practical work.</p>
+          <div style="text-align: center; margin: 20px 0;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LQPUTendFyM" 
+              title="Safety in the Workshop Animated Video" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+          </div>
+          <h4>Understanding WHS Signage</h4>
+          <p>Workplace Health and Safety (WHS) signage is critical in a workshop. These signs use specific colours and shapes to alert you to hazards:</p>
+          <ul>
+            <li><strong>Red:</strong> Indicates danger or prohibition (e.g. no entry zones).</li>
+            <li><strong>Yellow:</strong> Warns of potential hazards such as slippery surfaces.</li>
+            <li><strong>Blue:</strong> Provides information and instructions.</li>
+            <li><strong>Green:</strong> Denotes the location of safety equipment and emergency exits.</li>
+          </ul>
+          <h4>Additional Resource: Workplace Safety Signs</h4>
+          <p>For further information on the safety signs you may encounter in a workplace, please visit the following webpage:</p>
+          <p><a href="https://skillstrainingcollege.com.au/guide-to-health-and-safety-signs-in-the-workplace/" target="_blank" style="color: blue;">Guide To Health And Safety Signs In The Workplace</a></p>
+          <p>This resource explains the different categories of WHS signs as per Australian standards and provides visual examples and usage guidelines.</p>
+          <h4>Discussion Questions</h4>
+          <ol>
+            <li>Why are WHS signs critical in maintaining a safe work environment?</li>
+            <li>What are the key differences between prohibition, mandatory, and warning signs? Provide examples.</li>
+            <li>How do colours and symbols aid in communicating safety messages effectively?</li>
+            <li>In what ways can the information on the resource be applied in a timber workshop?</li>
+            <li>What challenges might you face in ensuring that safety signs are visible and effective?</li>
+          </ol>
+          <h4>Personal Protective Equipment (PPE) and Tools</h4>
+          <p>This week, you will also be introduced to essential PPE and marking and measuring tools, which are crucial for precision and safety.</p>
+          <h4>The Importance of a Safety-First Mindset</h4>
+          <p>Developing a safety-first mindset is essential. A secure, organised workshop allows you to focus on refining your skills without compromising safety.</p>
+          <h4>Student Activity</h4>
+          <p>Please complete the form in the topic <strong>'Safety'</strong> on Google Classroom.</p>
+          <p><a href="https://classroom.google.com/c/NzQxODI2OTY5NTgy?cjc=gmcjmm5" target="_blank" style="color: blue;">Go to Google Classroom</a></p>
+          <h4>Conclusion</h4>
+          <p>By understanding WHS signage, exploring additional resources, and engaging with discussion questions, you lay a solid foundation for the Breadboard unit.</p>
+        </article>
+      </details>
+
+      <!-- Week 2 in Breadboard Theory -->
+      <details>
+        <summary><strong>Week 2: Hand Tools and Timber Defects</strong></summary>
+        <article>
+          <h4>Introduction</h4>
+          <p>In Week 2, the focus shifts to the effective use of hand tools and the critical process of identifying timber defects. Precision in tool use and recognising imperfections is key to producing high-quality timber work. This in-depth article will guide you through proper techniques, maintenance routines, and best practices to ensure both safety and craftsmanship.</p>
+          <h4>Proper Use of Hand Tools</h4>
+          <p>Hand tools are the cornerstone of traditional woodworking. In this week’s practical sessions, you will work with essential tools such as:</p>
+          <ul>
+            <li><strong>Jack Plane:</strong> Used for smoothing and shaping timber. Learn the correct angle and pressure required for an even finish. Regular sharpening is essential to maintain its effectiveness.</li>
+            <li><strong>Marking Gauge:</strong> Critical for scoring accurate lines along the wood. Ensure that the gauge is calibrated properly before use to guarantee precision in your markings.</li>
+            <li><strong>Try Square:</strong> Essential for checking the squareness of workpieces. Using a try square correctly helps ensure that joints are aligned accurately, contributing to the overall quality of your project.</li>
+            <li><strong>Tenon Saw:</strong> Designed for precise cutting along marked lines, particularly on the waste side. Controlled, steady strokes are vital for clean cuts and reducing errors.</li>
+          </ul>
+          <p>For further reading on the proper use of hand tools, please visit <a href="https://teachingwoodwork.com/tools/hand-tools-for-beginners-young-people/" target="_blank" style="color: blue;">TeachingWoodwork.com - Hand Tools for Beginners and Young People</a>.</p>
+          <h4>Understanding Timber Defects</h4>
+          <p>Timber is a natural material and often comes with inherent imperfections. Recognising these defects is crucial for selecting the best pieces for your project and ensuring the final product's structural integrity and appearance. Common defects include:</p>
+          <ul>
+            <li><strong>Knot:</strong> Natural imperfections where branches once grew. While small knots can add character, large or loose knots may weaken the timber.</li>
+            <li><strong>Dent:</strong> Impact marks or depressions that can compromise the wood's strength.</li>
+            <li><strong>Irregular Grain:</strong> Variations in the wood grain may indicate stress or inconsistency, making it challenging to achieve smooth cuts.</li>
+            <li><strong>Sap Veins:</strong> Dark lines that can signal areas of weakness within the timber.</li>
+          </ul>
+          <p>Identifying these defects early allows you to plan your cuts effectively. For example, you may reserve timber with minimal defects for load-bearing components while using less critical pieces for aesthetic features.</p>
+          <h4>Best Practices for Tool Maintenance and Timber Selection</h4>
+          <p>Successful woodworking depends on both well-maintained tools and carefully selected timber. Consider the following practices:</p>
+          <ul>
+            <li><strong>Regular Inspection:</strong> Always check your tools for damage or dullness and sharpen or repair them as necessary.</li>
+            <li><strong>Timber Selection:</strong> Inspect timber thoroughly for defects before starting your project. Mark any imperfections and plan your work accordingly.</li>
+            <li><strong>Organised Workspace:</strong> Maintain a clean and organised workspace to minimise accidents and improve efficiency.</li>
+          </ul>
+          <h4>Further Research and Discussion</h4>
+          <p>For additional support material on hand tools and timber defects, please visit <a href="https://www.davidstimber.com.au/resource-centre/wood-defects/" target="_blank" style="color: blue;">David's Timber Resource Centre - Wood Defects</a>. This resource offers detailed information on common wood defects, making it accessible and useful for secondary students.</p>
+          <p><strong>Discussion Questions:</strong></p>
+          <ol>
+            <li>List three common timber defects described on <a href="https://www.davidstimber.com.au/resource-centre/wood-defects/" target="_blank" style="color: blue;">this website</a> and explain how each might affect a woodworking project.</li>
+            <li>How does regular tool maintenance contribute to minimising the impact of timber defects?</li>
+            <li>What strategies would you use to work around a timber defect when planning a project?</li>
+            <li>Discuss the importance of selecting high-quality timber and how recognising defects early can improve the final outcome.</li>
+          </ol>
+          <h4>Student Activity</h4>
+          <p>Please complete the "Wood Defects and Hand Tools for Beginners" activity in Google Classroom.</p>
+          <p><a href="https://classroom.google.com/c/NzQxODI2OTY5NTgy?cjc=gmcjmm5" target="_blank" style="color: blue;">Go to Google Classroom Activity</a></p>
+          <h4>Conclusion</h4>
+          <p>Week 2 equips you with the essential skills for using hand tools accurately and recognising timber defects effectively. By following best practices and engaging in further research, you will enhance both the quality and safety of your work, laying the foundation for more complex projects in the coming weeks.</p>
+        </article>
+      </details>
+
+      <!-- Week 3 in Breadboard Theory -->
+      <details>
+        <summary><strong>Week 3: Principles of Joinery</strong></summary>
+        <article>
+          <h4>Introduction</h4>
+          <p>Joinery is a fundamental aspect of woodworking. In Week 3, you will explore joinery principles with an emphasis on biscuit joinery, which aligns and strengthens timber while enhancing its appearance.</p>
+          <h4>Biscuit Joinery Explained</h4>
+          <p>This method involves inserting oval-shaped biscuits into slots cut in the timber. The biscuits act as alignment aids and reinforce the joint when glue is applied. This method is popular for its simplicity and effectiveness.</p>
+          <h4>The Role of Grain Direction</h4>
+          <p>Proper alignment of the timber grain is critical for joint strength and aesthetics. Well-aligned grain contributes to durability and an attractive finished product.</p>
+          <h4>Safety in Joinery</h4>
+          <p>Follow safety protocols when using tools such as the Biscuit Jointer, Pedestal Drill, and Disc Sander. Always adhere to manufacturer guidelines and wear appropriate PPE.</p>
+          <h4>Further Research and Support Material</h4>
+          <p>For additional support on joinery principles, please watch the following YouTube clip titled <a href="https://www.youtube.com/watch?v=2O9JZ9d8G9g" target="_blank" style="color: blue;">How to Use a Biscuit Joiner – Beginner's Guide</a>. This video provides a clear demonstration of using a biscuit joiner safely and effectively, and is appropriate for Year 9 students.</p>
+          <h4>Discussion Questions</h4>
+          <ol>
+            <li>What are the advantages of using biscuit joinery in woodworking projects?</li>
+            <li>How does grain direction affect the strength and appearance of a joint?</li>
+            <li>After watching the YouTube clip, what additional tips did you learn about joining wood?</li>
+            <li>Discuss the safety precautions you must take when using joinery tools such as the Biscuit Jointer and Pedestal Drill.</li>
+          </ol>
+          <h4>Student Activity</h4>
+          <p>Please complete the joinery activity on Google Classroom.</p>
+          <p><a href="https://classroom.google.com/c/NzQxODI2OTY5NTgy?cjc=gmcjmm5" target="_blank" style="color: blue;">Go to Google Classroom Activity</a></p>
+          <h4>Conclusion</h4>
+          <p>Week 3 lays the foundation for effective joinery by emphasising biscuit joinery techniques and the importance of grain direction. By exploring further resources and engaging in discussion, you will deepen your understanding of joinery and its role in creating robust, visually appealing timber projects.</p>
+        </article>
+      </details>
+
+      <!-- Week 4: Decorative Techniques and Machinery -->
+      <details>
+        <summary><strong>Week 4: Decorative Techniques and Machinery</strong></summary>
+        <article>
+          <h4>Introduction</h4>
+          <p>Week 4 explores the creative side of timber technology. This article covers decorative techniques using modern machinery such as laser cutters and jigsaws to enhance both functionality and aesthetics.</p>
+          <div style="text-align: center; margin: 20px 0;">
+            <img src="https://readveneersltd.co.uk/web/wp-content/uploads/2019/07/Fotolia_79201713_XS.jpg" alt="Decorative Techniques Image" style="max-width:100%; height:auto;">
+          </div>
+          <h4>Laser Cutting and Engraving</h4>
+          <p>Laser cutters allow for precise engraving and cutting of intricate patterns. You will learn how computer-aided design (CAD) software is used to create custom patterns that can be applied to timber, opening up new possibilities for design.</p>
+          <div style="text-align: center; margin: 20px 0;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SV_9ZyZlorw" 
+              title="Laser Cutting Resource" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+          </div>
+          <h4>Using the Jigsaw</h4>
+          <p>The jigsaw is a versatile tool that can be used to create curves and complex shapes. Proper use of the jigsaw, combined with safety measures, is essential for achieving smooth and accurate cuts.</p>
+          <div style="text-align: center; margin: 20px 0;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_ztM_Y_PlAo" 
+              title="Jigsaw Resource" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+          </div>
+          <h4>Design Considerations and Safety</h4>
+          <p>While creativity is important, always prioritise safety. Planning your design, selecting appropriate tools, and following safety guidelines are critical for secure operation.</p>
+          <div style="text-align: center; margin: 20px 0;">
+            <img src="https://myleslimited.com/wp-content/uploads/2023/02/5-2.jpg" alt="Safety Guidelines Image" style="max-width:100%; height:auto;">
+          </div>
+          <h4>Student Activity</h4>
+          <p>Please complete the activity on Google Classroom related to decorative techniques and machinery.</p>
+          <p><a href="https://classroom.google.com/c/NzQxODI2OTY5NTgy?cjc=gmcjmm5" target="_blank" style="color: blue;">Go to Google Classroom Activity</a></p>
+          <h4>Conclusion</h4>
+          <p>Week 4 demonstrates how creativity and technology merge to produce decorative timber work. Mastering these techniques will broaden your skill set and enhance the visual appeal of your projects.</p>
+          <div style="clear: both;"></div>
+        </article>
+      </details>
+
+      <!-- Week 5 in Breadboard Theory -->
+      <details>
+        <summary><strong>Week 5: Advanced Joining Techniques</strong></summary>
+        <article>
+          <h4>Introduction</h4>
+          <p>Advanced joining techniques are the focus of Week 5. This article discusses how to integrate adhesives and clamping methods for strong, precise joints.</p>
+          <h4>Adhesives in Woodworking</h4>
+          <p>Choosing the correct adhesive is crucial. Whether using wood glue or specialised bonding agents, understanding the properties of each adhesive ensures a durable bond between timber pieces.</p>
+          <p>For further reading on woodworking adhesives, please visit <a href="https://www.carbatec.com.au/article/1038/woodworking-glue-guide" target="_blank" style="color: blue;">Carbatec - Woodworking Glue Guide</a>.</p>
+          <h4>Clamping and Dry Fitting</h4>
+          <p>Clamping is essential for maintaining proper alignment while the adhesive sets. Dry fitting—assembling the parts without glue first—helps verify the fit and avoid mistakes during the final join.</p>
+          <h4>Safety Considerations</h4>
+          <p>Even when using adhesives, follow safety practices such as proper ventilation and careful handling of clamping tools to prevent accidents.</p>
+          <h4>Student Activity</h4>
+          <p>Please complete the "Advanced Joining Techniques" activity on Google Classroom.</p>
+          <p><a href="https://classroom.google.com/c/NzQxODI2OTY5NTgy?cjc=gmcjmm5" target="_blank" style="color: blue;">Go to Google Classroom Activity</a></p>
+          <h4>Conclusion</h4>
+          <p>Week 5 builds on your earlier skills by introducing advanced techniques in joining timber. The effective use of adhesives, clamping, and dry fitting ensures robust and precise joints.</p>
+        </article>
+      </details>
+
+      <!-- Week 6 in Breadboard Theory -->
+      <details>
+        <summary><strong>Week 6: Router Techniques</strong></summary>
+        <article>
+          <h4>Introduction</h4>
+          <p>In Week 6, we explore the versatile use of routers in woodworking. Mastering router techniques allows for precision in creating edges, grooves, and intricate designs.</p>
+          <h4>Router Basics</h4>
+          <p>A router is a power tool used to hollow out an area in the face of a piece of wood. It's essential for creating joints, shaping edges, and adding decorative elements.</p>
+          <h4>Types of Router Bits</h4>
+          <p>Understanding the various router bits is crucial:</p>
+          <ul>
+            <li><strong>Straight Bits:</strong> Used for cutting straight grooves and dados.</li>
+            <li><strong>Rabbeting Bits:</strong> Designed for cutting rabbets along the edge of a workpiece.</li>
+            <li><strong>Flush Trim Bits:</strong> Ideal for trimming edges flush with a template or another piece of wood.</li>
+            <li><strong>Round-Over Bits:</strong> Used to create rounded edges for a smooth finish.</li>
+          </ul>
+          <h4>Router Safety</h4>
+          <p>Always prioritize safety when using a router:</p>
+          <ul>
+            <li>Wear appropriate personal protective equipment (PPE), including safety glasses and hearing protection.</li>
+            <li>Ensure the router is securely mounted or held firmly to prevent accidents.</li>
+            <li>Keep hands clear of the cutting area and use push sticks or guides when necessary.</li>
+            <li>Always disconnect the power when changing bits or making adjustments.</li>
+          </ul>
+          <h4>Advanced Techniques</h4>
+          <p>Once basic skills are mastered, routers can be used for more advanced techniques such as:</p>
+          <ul>
+            <li><strong>Dovetail Joints:</strong> Creating strong and decorative joints for drawers and boxes.</li>
+            <li><strong>Inlay Work:</strong> Adding decorative inlays to enhance the visual appeal of a piece.</li>
+            <li><strong>Template Routing:</strong> Using templates to replicate patterns and shapes consistently.</li>
+          </ul>
+          <div style="text-align: center; margin: 20px 0;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8Vl8Jbw3cSk" 
+              title="Router Techniques Video" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+          </div>
+          <h4>Student Activity</h4>
+          <p>Please complete the "Router Techniques" activity on Google Classroom.</p>
+          <p><a href="https://classroom.google.com/c/NzQxODI2OTY5NTgy?cjc=gmcjmm5" target="_blank" style="color: blue;">Go to Google Classroom Activity</a></p>
+          <h4>Conclusion</h4>
+          <p>Mastering router techniques enhances both the functionality and aesthetics of your woodworking projects. Practice these skills to expand your craftsmanship.</p>
+        </article>
+      </details>
+
+      <!-- Week 7 in Breadboard Theory -->
+      <details>
+        <summary><strong>Week 7: Surface Preparation and Timber Seasoning</strong></summary>
+        <article>
+          <h4>Introduction</h4>
+          <p>Week 7 is all about surface preparation and timber seasoning, crucial steps to ensure the durability and finish of your work. This article examines sanding techniques, the use of abrasives, and the process of seasoning timber.</p>
+          <h4>Sanding Techniques</h4>
+          <p>Effective sanding is key to achieving a smooth surface. Learn about the different grades of sandpaper and how to choose the appropriate abrasive material for your timber.</p>
+          <p>For additional guidance on sanding wood, please visit <a href="https://www.empireabrasives.com/blog/wood-sanding-101-beginners-guide-to-sanding-wood/" target="_blank" style="color: blue;">Empire Abrasives: Wood Sanding 101 - Beginner's Guide</a>.</p>
+          <h4>Timber Seasoning: Air Drying vs Kiln Drying</h4>
+          <p>Seasoning timber reduces its moisture content, enhancing stability and durability. This section compares air drying with kiln drying, discussing the benefits and drawbacks of each method.</p>
+          <p>For further reading on the advantages of timber seasoning in the building industry, please visit <a href="https://www.versacetimbers.com.au/advantages-of-timber-seasoning-in-the-building-industry/" target="_blank" style="color: blue;">Versace Timbers: Advantages of Timber Seasoning</a>.</p>
+          <h4>Student Activity</h4>
+          <p>Please complete the "Surface Preparation and Timber Seasoning" activity on Google Classroom.</p>
+          <p><a href="https://classroom.google.com/c/NzQxODI2OTY5NTgy?cjc=gmcjmm5" target="_blank" style="color: blue;">Go to Google Classroom Activity</a></p>
+          <h4>Conclusion</h4>
+          <p>By mastering surface preparation and understanding timber seasoning, you set the stage for a flawless finish and a high-quality final product.</p>
+        </article>
+      </details>
+
+      <!-- Week 8 in Breadboard Theory -->
+      <details>
+        <summary><strong>Week 8: Timber Finishing and Sustainability</strong></summary>
+        <article>
+          <h4>Introduction</h4>
+          <p>Week 8 focuses on finishing your timber project and integrating sustainable practices. This article explores the different types of finishes available and discusses their environmental impact.</p>
+          <h4>Types of Finishes</h4>
+          <p>From clear varnishes to oil-based finishes like Danish Oil, each finish offers unique benefits. Understanding these differences helps you choose the right finish for both durability and aesthetics.</p>
+          <h4>Application Techniques</h4>
+          <p>Learn the step-by-step process for applying an even, long-lasting finish. Proper technique ensures that the timber is protected and its natural beauty is enhanced.</p>
+          <div style="text-align: center; margin: 20px 0;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PLyta5-2-TE" 
+              title="Timber Finishing Demonstration" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+          </div>
+          <h4>Sustainability in Timber Technology</h4>
+          <p>Adopting sustainable practices is vital. This section covers the use of renewable resources, recycling, and conservation methods to minimise the environmental impact of timber production.</p>
+          <div style="text-align: center; margin: 20px 0;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/h-vqviLKujE" 
+              title="Sustainability in Timber Finishing" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+          </div>
+          <h4>Student Activity</h4>
+          <p>Please complete the "Timber Finishing and Sustainability" activity on Google Classroom.</p>
+          <p><a href="https://classroom.google.com/c/NzQxODI2OTY5NTgy?cjc=gmcjmm5" target="_blank" style="color: blue;">Go to Google Classroom Activity</a></p>
+          <h4>Conclusion</h4>
+          <p>Week 8 integrates finishing techniques with sustainability, ensuring that your work is both attractive and environmentally responsible.</p>
+        </article>
+      </details>
+
+      <!-- Week 9 in Breadboard Theory -->
+      <details>
+        <summary><strong>Week 9: Self-Evaluation and Reflective Practice</strong></summary>
+        <article>
+          <h4>Introduction</h4>
+          <p>Week 9 is dedicated to self-evaluation and reflective practice. This article discusses the importance of critically assessing your work and documenting your progress.</p>
+          <h4>The Importance of Self-Evaluation</h4>
+          <p>Regular self-evaluation helps you identify strengths and areas for improvement. It is an essential tool for continuous learning and personal growth in timber technology.</p>
+          <h4>Documenting Your Process</h4>
+          <p>Keeping detailed records—sketches, notes, and photographs—provides valuable insights into your work, supporting your self-evaluation and informing future projects.</p>
+          <h4>Reflective Practice</h4>
+          <p>Reflecting on your successes and challenges deepens your understanding of effective techniques and strategies. Writing a self-evaluation report allows you to critically analyze what worked well and what could be improved in future projects.</p>
+          <h4>Student Activity</h4>
+          <p>Please complete the "Self-Evaluation and Reflective Practice" activity on Google Classroom.</p>
+          <p><a href="https://classroom.google.com/c/NzQxODI2OTY5NTgy?cjc=gmcjmm5" target="_blank" style="color: blue;">Go to Google Classroom Activity</a></p>
+          <h4>Conclusion</h4>
+          <p>Week 9 emphasises reflection and self-evaluation, cultivating a process of continuous improvement that is essential for mastering timber technology.</p>
+        </article>
+      </details>
+
+      <!-- Week 10 in Breadboard Theory -->
+      <details>
+        <summary><strong>Week 10: Project Presentation and Workshop Maintenance</strong></summary>
+        <article>
+          <h4>Introduction</h4>
+          <p>In the final week, focus shifts to presenting your project and maintaining a safe, organised workshop. This article covers the essentials of professional project presentation and effective workshop upkeep.</p>
+          <h4>Project Presentation</h4>
+          <p>A clear, well-organised presentation communicates your design process, challenges, and solutions. Learn how to compile detailed production records and design folios that reflect your work comprehensively.</p>
+          <h4>Workshop Maintenance</h4>
+          <p>Maintaining a clean workshop is crucial. Regular maintenance—tool cleaning, workspace organisation, and hazard management—ensures a productive work environment.</p>
+          <h4>Conclusion</h4>
+          <p>Week 10 brings the unit full circle by combining project presentation with workshop maintenance, reinforcing the importance of ongoing safety and efficiency.</p>
+        </article>
+      </details>
+    </section>
+
+    
+
+  <!-- ============================================================
+       FOOTER SECTION
+       Contains the footer content and back-to-top link.
+  ============================================================ -->
+  <footer>
+    <p>&copy; 2025 Industrial Technology Timber</p>
+    <p><a href="#program">Back to Top</a></p>
+  </footer>
+
+  <!-- ============================================================
+       JAVASCRIPT SECTION
+       Contains the code for interactive navigation.
+  ============================================================ -->
+  <script>
+    // Listen for clicks on nav links to toggle active sections
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('.content-section');
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        // Remove active class from all nav links and sections
+        navLinks.forEach(nav => nav.classList.remove('active'));
+        sections.forEach(sec => sec.classList.remove('active'));
+        // Add active class to clicked link and corresponding section
+        link.classList.add('active');
+        const targetID = link.getAttribute('data-section');
+        document.getElementById(targetID).classList.add('active');
+        // Scroll to top of the section for better user experience
+        document.getElementById(targetID).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
